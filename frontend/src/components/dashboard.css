@@ -1,0 +1,50 @@
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.name{
+    flex: 1 0 130px;
+}
+.password{
+    flex: 1 0 130px;
+}
+button{
+    flex: 1 0 40px;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+  }
+  
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+.slide-in {
+    transform: translateX(-100%);
+    animation: slideIn 8s infinite linear;
+  }
+  
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+.scale {
+    transform: scale(0);
+    animation: scaleAnim 3s forwards;
+  }
+  
+  @keyframes scaleAnim {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+  }
+  .rotate {
+    transform: rotate(0deg);
+    animation: rotateAnim 1.5s infinite linear;
+  }
+  
+  @keyframes rotateAnim {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
